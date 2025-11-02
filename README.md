@@ -1,8 +1,4 @@
-# python-runtime-function-creation
-create functions in python dynamically during runtime
-
-
-#### a little overview about this repo
+### a little overview about this repo
 
 While working on a project, I stumbled upon the idea of creating functions and variables dynamically during runtime. I realized that this approach is already used by many, but it was a new discovery for me! 😄
 
@@ -29,3 +25,7 @@ def create_dynamic_function(func_name, params, body):
         result = eval(f"{func_name}(4, 5)")  # Example call with dummy args
         print(f"Function '{func_name}' executed with result: {result}")
 ```
+
+## Example output 
+
+![output](https://raw.githubusercontent.com/Jeevan-Gharate/python-runtime-function-creation/refs/heads/main/example.png)
