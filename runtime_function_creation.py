@@ -2,7 +2,7 @@ def create_dynamic_function(func_name, params, body):
     # func_code = f"def {func_name}({', '.join(params)}):\n" ## if we derefence the params when we get a list of parameters
     func_code = f"def {func_name}({params}):\n" ## if we directly get the params as a string of comma separated parameters
     func_code += f"    {body}"
-    exec(func_code, globals())  ## this creates the function dynamically
+    exec(func_code, globals())  ## this creates the function dynamically in global context which enables calling it even outside create_dynamic_function()
 
     choice = input(f"Function '{func_name}' created. Do you want to execute it? (yes/no): ")
     if choice.lower() == 'yes':
